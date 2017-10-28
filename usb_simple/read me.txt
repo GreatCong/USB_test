@@ -1,0 +1,1 @@
+这个是精简版的libUSB和libftdi测试程序
