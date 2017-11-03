@@ -17,9 +17,9 @@ all:test
 INC= -I./inc_so/
 CC = g++
 LFLAGS = libmyUSB.so -L.-lmyUSB
-SRC = stm32cdc_test.c
+SRC = stm32cdc_test.c my_acm.c
 
-test:$(SRC) #添加依赖项
+test:$(SRC) my_acm.h #添加依赖项
 	$(CC) $(INC) $(SRC) $(LFLAGS) -o test
 
 clean:
